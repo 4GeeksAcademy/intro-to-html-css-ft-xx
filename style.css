@@ -143,7 +143,7 @@ div[class~="class3"]{ /* Que el atributo contenga el valor indicado */
 /*  */
 
 ul li:nth-child(3){
-    background-color: fuchsia;
+    background-color: blanchedalmond;
     color: gray;
 }
 
