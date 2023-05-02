@@ -77,3 +77,88 @@ div i {
 }
 
 /* Selector de Atributo */
+
+
+a[href]{ /* este presente el atributo href */
+    color: brown;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a[href="https://google.com"]{ /* El atributo sea igual al valor indicado */
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a[href="https://facebook.com"]{
+    color: blue;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    display: block;
+    margin: 5px;
+}
+
+ul li[class^="front"]{ /* Que el atributo comience con el patron indicado */
+    color: violet;
+}
+
+ul li[class^="back"]{
+    color: chocolate;
+}
+
+a[href$=".com"]{
+    color: blueviolet;
+}
+
+div[class~="class3"]{ /* Que el atributo contenga el valor indicado */
+    border: 1px solid blue;
+}
+
+/* Pseudo Clases */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.box:hover {
+    background-color: red;
+}
+
+.box::before {
+    content: "1";
+    display: block;
+}
+
+.box::after {
+    content: "2";
+    display: block;
+}
+
+/*  */
+
+ul li:nth-child(3){
+    background-color: fuchsia;
+    color: gray;
+}
+
+ul li:first-child {
+    color: red;
+}
+
+ul li:last-child {
+    color: green;
+}
+
+.contenido {
+
+}
+
+.contenido .cabecera {
+
+}
